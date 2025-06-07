@@ -22,7 +22,7 @@
     transform: translate(-50%, -50%);
     z-index: 1;
     object-fit: cover;
-    opacity: 0.4;
+    opacity: 0.5;
     /* Optional: makes text more visible */
 }
 
@@ -30,38 +30,58 @@
     position: relative;
     z-index: 2;
     color: white;
-    text-align: center;
+    /* text-align: center; */
+    /* border: 2px solid red; */
+    margin: 5rem auto;
+    /* background-color: rgba(0, 0, 0, 0.448); */
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     top: 50%;
     transform: translateY(-50%);
-    padding: 0 20px;
+    text-align: center;
+    gap: 1rem;
 }
 
 .home-content h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 2.7rem;
+    font-weight: bolder;
+    margin-bottom: 0;
+    /* line-height: 4.5rem; */
 }
 
 .home-content p {
     font-size: 1.5rem;
     margin-bottom: 30px;
-}
-
-.homediv {
-    background-color: white;
-    z-index: 50000;
+    font-weight: bold;
 }
 
 .home-content button {
-    padding: 12px 24px;
-    background-color: rgba(162, 126, 39, 0.9);
+    padding: 1.5rem 2rem;
+    background-color: #a27d27c9;
     /* your gold color */
     border: none;
     color: white;
-    font-size: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .home-content button:hover {
-    background-color: rgba(162, 126, 39, 1);
+    background-color: #a27e27;
+}
+
+@media screen and (max-width:1025px) {
+    .home-content {
+        width: 100%;
+    }
+    .home-content h1 {
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+    }
+    .home-content p {
+        font-size: 1.3rem;
+    }
 }
