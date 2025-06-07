@@ -19,6 +19,7 @@ function DropdownMenu({ visible, onClose }) {
   function handleClick(path)
   {
     navigate(`/${path}`);
+    onClose();
   }
   return (
     <div className={`dropdown-menu ${visible ? 'open' : ''}`}>
