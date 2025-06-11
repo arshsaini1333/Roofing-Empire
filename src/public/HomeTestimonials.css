@@ -257,6 +257,10 @@
     .counter-circle {
         width: 110px;
         height: 110px;
+        p {
+            text-align: center;
+            margin-left: 0 !important;
+        }
     }
     .text-block p {
         margin-left: 1rem;
