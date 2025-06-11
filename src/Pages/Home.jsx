@@ -4,6 +4,7 @@ import ProjectHighlight from "../Components/ProjectHighlight"
 import HomeContact from "../Components/HomeContact"
 import Rewards from "../Components/Rewards"
 import HomeTestimonials from "../Components/HomeTestimonials"
+import Footer from "../Components/Footer"
 export default function Home()
 {
     return(
@@ -13,6 +14,7 @@ export default function Home()
         {/* <Rewards/> */}
         <HomeTestimonials/>
         <HomeContact/>
+        <Footer/>
         </>
     )
 }
