@@ -1,6 +1,6 @@
 
 import '../public/Home.css'
-import bgvdo from '../assets/bg1.mp4'
+import bgvdo from '../assets/bgvdo.mp4'
 export default function Hero()
 {
     return(

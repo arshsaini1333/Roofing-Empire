@@ -75,7 +75,7 @@
 
 @media screen and (max-width:1025px) {
     .home-content {
-        width: 100%;
+        width: 95%;
     }
     .home-content h1 {
         font-size: 1.8rem;
@@ -257,6 +257,67 @@
     }
 }
 
+@media screen and (max-width:991px) {
+    .ph-content {
+        height: auto;
+        flex-direction: column;
+        background: none !important;
+        gap: 1rem;
+    }
+    .lower-content {
+        display: flex;
+        width: 50%;
+        background-color: rgba(255, 255, 255, 0.836);
+        margin-left: 10%;
+    }
+    .upper-content {
+        display: none;
+    }
+    .ph-card {
+        width: 70%;
+        height: 20rem;
+        justify-content: flex-start;
+    }
+    .ph-card1 {
+        background: url('../assets/ph1.jpg');
+        background-size: cover;
+    }
+    .ph-card2 {
+        background: url('../assets/ph2.jpg');
+        background-size: cover;
+    }
+    .ph-card3 {
+        background: url('../assets/ph3.jpg');
+        background-size: cover;
+    }
+    .ph-heading {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .ph-left {
+        width: 100%;
+    }
+    .ph-right {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ph-super {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width:551px) {
+    .ph-card {
+        width: 90%;
+        height: 25rem;
+    }
+    .lower-content {
+        width: 65%;
+    }
+}
+
 
 /* Contact Form */
 
@@ -357,4 +418,28 @@ textarea::placeholder {
 
 .h4 {
     text-align: center;
+}
+
+@media screen and (max-width:1050px) {
+    .form-container {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .HomeContact {
+        height: 100vh;
+    }
+    .form-row {
+        flex-direction: column;
+    }
+    .form-container {
+        width: 85%;
+    }
+    .form-container button {
+        width: 60%;
+    }
+    .ch-super {
+        font-size: 1.6rem;
+    }
 }
