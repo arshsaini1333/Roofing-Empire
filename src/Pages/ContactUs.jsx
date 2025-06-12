@@ -1,8 +1,13 @@
+import ContactUSForm from "../Components/ContactUSForm"
+import GoogleMapContact from "../Components/GoogleMapContact"
+import Footer from '../Components/Footer.jsx'
 export default function ContactUs()
 {
     return(
     <>
-    <h1>Contact US</h1>
+    <ContactUSForm/>
+    <GoogleMapContact/>
+    <Footer/>
     </>
     )
 }
