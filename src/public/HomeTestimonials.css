@@ -55,6 +55,7 @@
     /* flex: 2; */
     gap: 20px;
     overflow: hidden;
+    padding-right: 0.5rem;
     width: auto;
 }
 
@@ -101,13 +102,13 @@
 }
 
 .testimonial-card {
-    /* background: white; */
-    background-color: #aa8fff;
+    background: white;
+    /* background-color: #aa8fff; */
     border-radius: 12px;
     padding: 16px;
     margin-bottom: 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    /* border: 1px solid #eee; */
+    border: 1px solid #eee;
 }
 
 .stars {
@@ -121,22 +122,23 @@
 .name {
     font-weight: 800;
     font-size: 1rem;
-    color: white;
+    /* color: white; */
+    color: #444;
 }
 
 .location {
     font-size: 14px;
-    /* color: #999; */
-    color: rgba(255, 255, 255, 0.847);
+    color: #999;
+    /* color: rgba(255, 255, 255, 0.847); */
     /* color: #a27e27; */
     margin-bottom: 10px;
 }
 
 .message {
     font-size: 16px;
-    /* color: #444; */
+    color: #444;
     font-weight: 600;
-    color: white;
+    /* color: white; */
 }
 
 
@@ -169,7 +171,8 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-color: #a27e27;
+    /* background-color: #a27e27; */
+    background-color: #aa8fff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -213,8 +216,8 @@
     font-size: 1.1rem;
     padding: 1rem 1.5rem;
     background-color: white;
-    background-color: #a27e27;
-    /* background-color: #aa8fff; */
+    /* background-color: #a27e27; */
+    background-color: #aa8fff;
     border: none;
     color: white;
     font-weight: bolder;
