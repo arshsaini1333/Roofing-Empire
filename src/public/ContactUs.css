@@ -280,12 +280,14 @@
     .GoogleMapContact {
         margin-top: 100vh;
         flex-direction: column-reverse;
+        gap: 2rem;
         align-items: center;
     }
     .gm-mp {
         width: 75%;
     }
     .cu-form-container {
+        margin-top: 0;
         width: 70%;
     }
     .cuh-super {
