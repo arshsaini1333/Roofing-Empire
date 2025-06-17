@@ -40,7 +40,7 @@
 /* Contact INFO */
 
 .contact-information {
-    width: 50%;
+    width: 100%;
     padding: 0rem 4rem;
     display: flex;
     flex-direction: column;
@@ -72,90 +72,7 @@
 }
 
 
-/* Contact Form  */
-
-.cu-form-container {
-    margin: 0 auto;
-    margin-top: 7rem;
-    width: 35%;
-    padding: 2rem 2rem;
-    border-radius: 1rem;
-    /* border: 2px solid red; */
-    /* display: flex; */
-    background-color: rgba(0, 0, 0, 0.404);
-    /* background-color: white; */
-    color: white !important;
-    /* justify-content: center;
-    flex-direction: column;
-    align-items: center; */
-}
-
-.cu-heading {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.cuh-sub {
-    font-size: 1.1rem;
-    /* color: #a27e27; */
-    color: #aa8fff;
-    text-transform: uppercase;
-    font-weight: bolder;
-    margin-bottom: 3rem;
-}
-
-.cuh-super {
-    font-size: 2.2rem;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-    color: #fff;
-}
-
-.cu-form label {
-    display: block;
-    font-size: 18px;
-    margin-top: 20px;
-}
-
-.cu-form-container form {
-    width: 90%;
-}
-
-.cu-input,
-.cu-textarea {
-    width: 100%;
-    padding: 3px 0px;
-    font-size: 16px;
-    border: none;
-    border-bottom: 1px solid #444;
-    outline: none;
-}
-
-
-/* .cu-textarea {
-    resize: vertical;
-    height: 40px;
-} */
-
-.cuh-btn {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-}
-
-.sub-btn {
-    background-color: #aa8fff;
-    border: none;
-    color: white;
-    padding: 1rem 1.5rem;
-    border-radius: 0.8rem;
-    width: 30%;
-    font-size: 1.2rem;
-    font-weight: bold;
-    cursor: pointer;
-}
+/*--------------------Contact Form------------------- */
 
 .cui-btns {
     display: flex;
@@ -217,6 +134,8 @@
         height: auto;
     }
     .cu-contetn {
+        height: auto;
+        padding-bottom: 5rem;
         flex-direction: column;
         margin-top: 10rem;
     }
@@ -271,12 +190,15 @@
 
 .GoogleMapContact {
     margin-top: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     margin-bottom: 5rem;
     width: 100%;
 }
 
 .gm-mp {
-    width: 100%;
+    width: 50%;
     display: flex;
     justify-content: center;
 }
@@ -285,10 +207,105 @@
     border-radius: 1rem;
     border: none;
     box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.091);
+    height: 500px;
+    width: 100%;
 }
 
-@media screen and (max-width:1025px) {
+.cu-form-container {
+    width: 30%;
+    background-color: #F5F5DC;
+    /* background-color: black; */
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    color: black !important;
+}
+
+.cu-heading {
+    display: flex;
+    flex-direction: column;
+}
+
+.cuh-sub {
+    font-size: 1.1rem;
+    /* color: #a27e27; */
+    color: #a27e27;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.cuh-super {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.cu-form label {
+    display: block;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.cu-form-container form {
+    width: 90%;
+}
+
+.cu-input,
+.cu-textarea {
+    width: 100%;
+    padding: 3px 0px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #444;
+    outline: none;
+}
+
+.cuh-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.sub-btn {
+    background-color: #a27d27de;
+    border: none;
+    color: white;
+    padding: 1rem 1.5rem;
+    width: 35%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sub-btn:hover {
+    background-color: #a27e27;
+}
+
+@media screen and (max-width:990px) {
     .GoogleMapContact {
-        margin-top: 73rem;
+        margin-top: 90vh;
+        flex-direction: column;
+    }
+    .gm-mp {
+        width: 75%;
+    }
+    .cu-form-container {
+        width: 70%;
+    }
+    .cuh-super {
+        font-size: 1.6rem;
+    }
+    .sub-btn {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:990px) {
+    .gm-mp {
+        width: 80%;
+    }
+    .cu-form-container {
+        width: 72%;
     }
 }

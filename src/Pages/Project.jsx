@@ -1,8 +1,13 @@
+import HeroProject from "../Components/HeroProject"
+import AllProjects from "../Components/AllProjects"
+import Footer from "../Components/Footer"
 export default function Project()
 {
     return(
         <>
-        <h1>Project</h1>
+        <HeroProject/>
+        <AllProjects/>
+        <Footer/>
         </>
     )
 }

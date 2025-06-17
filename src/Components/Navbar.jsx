@@ -1,37 +1,58 @@
 import React, { useState } from 'react';
-import DropdownMenu from './DropdownMenu.jsx';
+import { Link } from 'react-router-dom';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 import '../public/Navbar.css';
-import DragHandleIcon from '@mui/icons-material/DragHandle';
-import  CloseIcon from '@mui/icons-material/Close'; 
-import CallMadeIcon from '@mui/icons-material/CallMade';
-import {Link} from 'react-router-dom'
-
 import logo from '../assets/logo1.png'
-function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false);
+
+export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDrawer = () => setIsOpen(!isOpen);
+  const closeDrawer = () => setIsOpen(false);
 
   return (
     <>
-      <nav className={`navbar ${menuOpen ? 'opened' : ''}`}>
-        <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
-          <DragHandleIcon sx={{ fontSize: 40 }} className={` ${menuOpen ? 'buttonOpen' : 'buttonClose'}`}/>
-          <CloseIcon sx={{ fontSize: 40 }} className={` ${menuOpen ? 'buttonClose' : 'buttonOpen'}`}/>
-        </button>
-
-        <div className="logo">
-          <img src={logo} alt="" />
-          <p>Roofing Empire</p>
+      <nav className="navbar">
+        <div className="navbar-brand desktop-only">
+          <img src={logo} alt="" className='logo'/>
+          <Link to="/" className='brand-name'>Roofing Empire</Link>
         </div>
 
-        <div className="external-link">
-          <Link to='/contact' className='ext-link'><span className='callArrow'><CallMadeIcon  className='call-arr-inner'/></span><span>Let's Talk</span></Link>
+        <div className="navbar-links desktop-only">
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/project">Projects</Link>
+          <Link to="/listing">Available Listings</Link>
+          <Link to="/gallery">Gallery</Link>
+          <Link to="/contact">Contact Us</Link>
+        </div>
+
+        <div className="hamburger mobile-only" onClick={toggleDrawer}>
+          <MenuIcon style={{ color: 'white', fontSize: '32px' }} />
         </div>
       </nav>
 
-      {/* Dropdown slides below navbar */}
-      <DropdownMenu visible={menuOpen} onClose={() => setMenuOpen(false)} />
+      {/* Mobile Slide Drawer */}
+      <div className={`mobile-drawer ${isOpen ? 'open' : ''}`}>
+        <div className="drawer-header">
+         
+          <img src={logo} alt="" className='logo' onClick={closeDrawer}/>
+          <Link to="/" className='dh-brand-name' onClick={closeDrawer}>Roofing Empire</Link>
+         
+        </div>
+        <div className="drawer-links">
+          <Link to="/" onClick={closeDrawer}>Home</Link>
+          <Link to="/about" onClick={closeDrawer}>About</Link>
+          <Link to="/project" onClick={closeDrawer}>Projects</Link>
+          <Link to="/listing" onClick={closeDrawer}>Available Listings</Link>
+          <Link to="/gallery" onClick={closeDrawer}>Gallery</Link>
+          <Link to="/contact" onClick={closeDrawer}>Contact Us</Link>
+        </div>
+      </div>
+
+      {/* Optional overlay for clicking outside */}
+      {isOpen && <div className="overlay" onClick={closeDrawer}></div>}
     </>
   );
 }
-
-export default Navbar;

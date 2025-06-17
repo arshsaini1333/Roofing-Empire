@@ -40,62 +40,7 @@ export default function ContactUSForm()
     <button className='cui-bt'>Book Free Site Visit</button>
       </div>
     </div>
-                <div className="cu-form-container" id="cu-form-container">
-        
-       <div className="cu-heading">
-        
-        <div className="cuh-super">Leave Your Message</div>
-       </div>
-       <div className="cuh-sub">We love to hear from you</div>
-     
-      <form className="cu-form" id="cu-form">
-        <label htmlFor="cu-name">
-          Name 
-        </label>
-        <input
-          type="text"
-          id="cu-name"
-          className="cu-input"
-          
-          required
-        />
-
-        <label htmlFor="cu-email">
-          Email 
-        </label>
-        <input
-          type="email"
-          id="cu-email"
-          className="cu-input"
-          
-          required
-        />
-
-
-        <label htmlFor="cu-phone">
-          Phone number
-        </label>
-        <input
-          type="tel"
-          id="cu-phone"
-          className="cu-input"
-          
-          required
-        />
-
-        <label htmlFor="cu-comments">Message</label>
-        <textarea
-          id="cu-comments"
-          className="cu-textarea"
-         
-        ></textarea>
-
-        <div className="cuh-btn">
-        <button type='submit' className='sub-btn'>Submit</button>
         </div>
-      </form>
-    </div>
-            </div>
         </div>
     )
 }

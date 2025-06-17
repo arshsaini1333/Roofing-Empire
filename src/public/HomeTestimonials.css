@@ -172,7 +172,8 @@
     height: 150px;
     border-radius: 50%;
     /* background-color: #a27e27; */
-    background-color: #aa8fff;
+    /* background-color: #aa8fff; */
+    background-color: #F5F5DC;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -189,13 +190,13 @@
 .counter-circle h2 {
     font-size: 24px;
     font-weight: bold;
-    color: #fff;
+    color: #333;
     margin: 0;
 }
 
 .counter-circle p {
     font-size: 14px;
-    color: #fff;
+    color: #333;
     margin: 4px 0 0 0;
     text-wrap: wrap;
 }
@@ -216,12 +217,13 @@
     font-size: 1.1rem;
     padding: 1rem 1.5rem;
     background-color: white;
-    /* background-color: #a27e27; */
-    background-color: #aa8fff;
-    border: none;
+    background-color: #a27e27;
+    border: 3px solid #a27e27;
+    /* background-color: #aa8fff; */
     color: white;
     font-weight: bolder;
     cursor: pointer;
+    transition: all 0.3s ease-in;
 }
 
 .callIcon {
@@ -229,6 +231,9 @@
 }
 
 .ht-cta button:hover {
+    background-color: white;
+    border: 3px solid #a27e27;
+    color: #a27e27;
     .callIcon {
         transform: rotate(45deg);
     }

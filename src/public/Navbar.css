@@ -1,296 +1,191 @@
-/* Navbar */
+/* General Navbar styling */
 
 .navbar {
-    position: absolute;
-    top: 2rem;
-    left: 0;
-    right: 0;
-    width: 70%;
-    border-radius: 1rem;
-    margin: auto;
-    background: white;
     display: flex;
     justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 0.5rem 2rem;
-    z-index: 3000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background: #1c1c1c;
+    /* background-color: white; */
+    /* color: #1c1c1c !important; */
+    /* background-color: transparent; */
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1001;
 }
 
-.opened {
-    box-shadow: none;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+.navbar a {
+    color: white;
+    text-decoration: none;
+    /* margin: 0 1rem; */
+    position: relative;
+    padding: 0.3rem;
 }
 
-.menu-btn {
-    font-size: 2rem;
-    background: none;
-    border: none;
+
+/* .navbar a:hover {
+    color: #ddd;
+} */
+
+.hamburger {
     cursor: pointer;
+}
+
+.navbar-brand {
+    /* border: 2px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #aa8fff;
-    color: white;
-    border-radius: 7px;
 }
 
 .logo {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    /* gap: 1rem; */
-    font-weight: bold;
-}
-
-.logo p {
-    margin: auto 0;
-    color: #a27e27;
-    font-size: 2rem;
-    font-weight: bolder;
-}
-
-.logo img {
     height: 3rem;
 }
 
-.buttonOpen {
-    display: none !important;
-}
-
-.buttonClose {
-    display: flex !important;
-}
-
-.external-link {
-    /* border: 2px solid red; */
-    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.432);
-    border-radius: 10px;
-    color: white;
-    padding: 0.5rem 0.8rem;
-    transition: all 1s ease;
-}
-
-.ext-link {
+.navbar-links {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0.9rem;
-    gap: 0.5rem;
+    gap: 2rem;
 }
 
-.external-link a {
-    text-decoration: none;
-    color: #333;
-}
-
-.external-link Link {
-    text-decoration: none !important;
-    color: white !important;
-}
-
-.callArrow {
-    color: white !important;
-    background-color: #aa8fff !important;
-    border-radius: 7px;
-    padding: 0.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    transition: all 0.5s ease-in-out;
-}
-
-.call-arr-inner {
-    transition: all 1s ease-in-out;
-}
-
-.external-link:hover {
-    .callArrow {
-        transform: scale(1.1);
-    }
-    .call-arr-inner {
-        transform: rotate(-45deg);
-    }
-}
-
-@media screen and (max-width:600px) {
-    .logo {
-        flex-direction: column;
-    }
-}
-
-
-/* Drop Down */
-
-.dropdown-menu {
+.navbar-links a::after {
+    content: "";
     position: absolute;
-    left: 50%;
-    top: 60px;
-    transform: translateX(-50%);
-    width: 70%;
-    background: #fff;
-    overflow: hidden;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    height: 0;
-    transition: all 0.5s ease;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    z-index: 2000;
+    left: 0;
+    bottom: -4px;
+    /* adjust underline distance */
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: width 0.3s ease;
+}
+
+.navbar-links a:hover::after {
+    width: 100%;
+}
+
+@media screen and (max-width:1025px) {
+    .navbar-links {
+        gap: 1.5rem;
+    }
+}
+
+.brand-name {
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: #a27e27 !important;
+    margin: 0 !important;
+}
+
+
+/* Mobile Drawer */
+
+.mobile-drawer {
+    position: fixed;
+    top: 0;
+    left: -350px;
+    /* Hidden by default */
+    height: 100%;
+    width: 300px;
+    background: #1c1c1c;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    transition: left 0.3s ease;
+    z-index: 1002;
+}
+
+.mobile-drawer.open {
+    left: 0;
+}
+
+.drawer-header {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+}
+
+.dh-brand-name {
+    color: #a27e27;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.drawer-header a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.drawer-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
     padding: 0 2rem;
 }
 
-.dropdown-menu.open {
-    height: auto;
-    width: 70%;
-    position: absolute;
-    margin: auto !important;
-    top: 100px;
-    padding: 0.5rem 2rem;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    overflow-x: hidden !important;
-    /* Adjust as needed */
-}
-
-.dropdown-content {
-    margin-top: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 1rem;
-    gap: 1rem;
-}
-
-.dropdown-menu.open::-webkit-scrollbar {
-    width: 3px;
-}
-
-
-/* Scrollbar Thumb */
-
-.dropdown-menu.open::-webkit-scrollbar-thumb {
-    background-color: #aa8fff;
-    /* example color, you can replace with your brand color */
-    border-radius: 4px;
-}
-
-
-/* Scrollbar Track background */
-
-.dropdown-menu.open::-webkit-scrollbar-track {
-    background: transparent;
-    border-radius: 4px;
-}
-
-.nav-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    gap: 1rem;
-}
-
-.nav-card {
-    /* border: 2px solid green; */
-    width: 25%;
-    display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    gap: 0.8rem;
-    padding: 1rem 1rem;
-    box-shadow: 0px 0px 1px 1px #a98fff8f;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: all 0.5s ease-in;
-}
-
-.nc-logo {
-    color: #a27e27;
-    transition: all 0.5s ease-in;
-}
-
-.nc-name {
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: #333;
-    transition: all 0.5s ease-in;
-}
-
-.nav-card:hover {
-    background-color: #aa8fff;
+.drawer-links a {
+    margin: 1rem 0;
+    text-decoration: none;
     color: white;
-    .nc-name {
-        color: white;
-    }
-    .nc-logo {
-        color: white;
-    }
+    width: fit-content !important;
+    position: relative;
+    padding: 0.3rem;
 }
 
-@media screen and (max-width:1200px) {
-    .navbar {
-        width: 90%;
-    }
-    .dropdown-menu {
-        width: 90%;
-    }
-    .dropdown-menu.open {
-        width: 90%;
-    }
+.drawer-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    /* adjust underline distance */
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: width 0.3s ease;
 }
 
-@media screen and (max-width:900px) {
+.drawer-links a:hover::after {
+    width: 100%;
+}
+
+
+/* Overlay when drawer is open */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+
+/* Show/hide for responsive */
+
+.desktop-only {
+    display: flex;
+}
+
+.mobile-only {
+    display: none;
+}
+
+@media (max-width: 991px) {
     .navbar {
-        width: 70%;
+        justify-content: flex-start;
     }
-    .dropdown-menu {
-        width: 70%;
-    }
-    .dropdown-menu.open {
-        width: 70%;
-        height: 500px;
-        /* max-height: auto; */
-        overflow: scroll;
-    }
-    .external-link {
+    .desktop-only {
         display: none;
     }
-    .navbar {
-        display: flex;
-        flex-direction: row-reverse;
-    }
-    .logo p {
-        width: 100%;
-        font-size: 1.5rem;
-    }
-    .nav-card {
-        width: 90%;
-    }
-    .nav-row {
-        flex-direction: column;
-    }
-    .dropdown-content {
-        margin-top: 3rem;
-    }
-}
-
-@media screen and (max-width:500px) {
-    .navbar {
-        width: 80%;
-    }
-    .dropdown-menu {
-        width: 80%;
-    }
-    .dropdown-menu.open {
-        width: 80%;
-        height: 500px;
-        /* max-height: auto; */
-        overflow: scroll;
-    }
-    .nc-name {
-        font-size: 1.1rem;
+    .mobile-only {
+        display: block;
     }
 }

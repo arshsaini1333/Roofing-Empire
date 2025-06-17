@@ -1,0 +1,213 @@
+.HeroProject {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.project-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+.project-head {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    color: white;
+    /* border: 2px solid red; */
+    /* line-height: 7rem; */
+    opacity: 1;
+    gap: 1rem;
+}
+
+.pp-super {
+    font-size: 5rem;
+    font-weight: bolder;
+}
+
+.pp-sub {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+@media screen and (max-width:1100px) {
+    .project-head {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:990px) {
+    .project-head {
+        width: 100%;
+        font-size: 3.5rem;
+    }
+    .pp-super {
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 0 0.5rem;
+    }
+    .pp-sub {
+        font-size: 1.1rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+}
+
+
+/* aLL Projects */
+
+.AllProjects {
+    margin-top: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+
+.projects {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.all-project {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.project-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.ap-sub {
+    font-size: 1.1rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #a27e27;
+}
+
+.ap-super {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* Card Designing */
+
+.project-card {
+    width: 29%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s, box-shadow 0.4s;
+    background: #fff;
+    cursor: pointer;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.project-card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.project-card:hover .project-card-image img {
+    transform: scale(1.05);
+}
+
+.project-card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.project-sub {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.project-name {
+    font-weight: bold;
+    /* color: #228B22; */
+    color: red;
+    margin-bottom: 10px;
+}
+
+.project-adj {
+    list-style: disc inside;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.project-adj li {
+    list-style: none;
+    margin-bottom: 4px;
+}
+
+.project-amnt {
+    display: flex;
+    /* justify-content: center; */
+    margin-top: 12px;
+    font-weight: bold;
+    color: #444;
+}
+
+@media screen and (max-width:900px) {
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-heading {
+        text-align: center;
+    }
+    .project-card {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .project-card {
+        width: 75%;
+    }
+    .ap-super {
+        font-size: 1.6rem;
+    }
+}
