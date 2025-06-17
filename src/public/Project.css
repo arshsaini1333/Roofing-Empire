@@ -77,13 +77,13 @@
     margin-top: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 5rem;
     margin-bottom: 5rem;
 }
 
 .projects {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     width: 100%;
     justify-content: center;
 }
@@ -91,7 +91,7 @@
 .all-project {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .project-heading {
@@ -99,7 +99,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    padding: 0 1rem;
+    /* gap: 1rem; */
 }
 
 .ap-sub {
@@ -205,9 +206,12 @@
 
 @media screen and (max-width: 600px) {
     .project-card {
-        width: 75%;
+        width: 85%;
     }
     .ap-super {
-        font-size: 1.6rem;
+        font-size: 1.3rem;
+    }
+    .project-sub {
+        font-size: 1rem;
     }
 }
