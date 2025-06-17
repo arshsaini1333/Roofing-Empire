@@ -127,15 +127,9 @@
 }
 
 @media screen and (max-width: 1025px) {
-    .ContactUS {
-        height: auto;
-    }
-    .cu-bg {
-        height: auto;
-    }
     .cu-contetn {
         height: auto;
-        padding-bottom: 5rem;
+        /* padding-bottom: 5rem; */
         flex-direction: column;
         margin-top: 10rem;
     }
@@ -192,7 +186,7 @@
     margin-top: 100vh;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 5rem;
     width: 100%;
 }
@@ -284,7 +278,7 @@
 
 @media screen and (max-width:990px) {
     .GoogleMapContact {
-        margin-top: 90vh;
+        margin-top: 100vh;
         flex-direction: column;
     }
     .gm-mp {
