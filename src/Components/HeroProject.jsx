@@ -1,4 +1,4 @@
-import bg from '../assets/projects.jpg'
+import bg from '../assets/cu1.jpg'
 import '../public/Project.css'
 export default function HeroProject(){
     return(
