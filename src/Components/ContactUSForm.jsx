@@ -20,7 +20,7 @@ export default function ContactUSForm()
 
       <div className="cu-contact-item">
         <PhoneIcon className="cu-contact-icon" />
-        <span>+91 9876543210</span>
+        <span>+91 9999200048</span>
       </div>
 
       <div className="cu-contact-item">

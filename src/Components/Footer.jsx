@@ -23,7 +23,7 @@ const Footer = () => {
         <div className="footer-contact">
           <h4>Contact</h4>
           <p>📍 Chhattarpur & DLF Farms, South Delhi</p>
-          <p>📞 +91 9876543210</p>
+          <p>📞 +91 9999200048</p>
           <p>✉️ roofingempire@gmail.com</p>
         </div>
       </div>
