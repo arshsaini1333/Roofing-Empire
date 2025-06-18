@@ -45,12 +45,7 @@ export default function GalleryPics(){
             <img src={image} alt={`gallery ${index + 1}`} />
           </div>
         ))}
-        {/* If you want to add the booking card, you can uncomment this:
-        <div className="g-card g-book-card">
-          <p>Only 3 Villas Left</p>
-          <button onClick={openPopup}>Book Now</button>
-        </div>
-        */}
+        
       </div>
     </div>
   );
