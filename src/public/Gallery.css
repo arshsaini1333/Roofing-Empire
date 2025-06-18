@@ -1,0 +1,187 @@
+.galleryHero {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.gallery-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+.gallery-head {
+    position: relative;
+    display: flex;
+    /* flex-direction: row-reverse; */
+    align-items: center;
+    width: 50%;
+    padding: 0rem 3rem;
+    height: 100%;
+    z-index: 5;
+    color: white;
+    font-size: 7rem;
+    /* border: 2px solid red; */
+    /* line-height: 7rem; */
+    opacity: 1;
+    font-weight: bolder;
+}
+
+@media screen and (max-width:990px) {
+    .gallery-head {
+        font-size: 4.5rem;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .gallery-head {
+        font-size: 3.5rem;
+        width: 70%;
+    }
+}
+
+
+/* GAllery */
+
+.gallry {
+    margin-top: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    margin-bottom: 5rem;
+    padding: 2rem 1rem;
+    gap: 2rem;
+}
+
+.g-heading {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.g-sub {
+    font-size: 1.1rem;
+    font-weight: bolder;
+    color: #a27e27;
+    text-transform: uppercase;
+}
+
+.g-super {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.g-body {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.g-card {
+    width: 250px;
+    cursor: pointer;
+    border-radius: 1rem;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.g-card img {
+    width: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+    display: block;
+    transition: 0.5s all ease;
+}
+
+.g-book-card {
+    position: relative;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./images/f1.jpg');
+    padding: 0.5rem 0.1rem;
+}
+
+.g-book-card::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.694);
+    z-index: 2;
+}
+
+.g-book-card p {
+    z-index: 3;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.g-card img:hover {
+    transform: scale(1.2);
+}
+
+.g-book-card button {
+    border: none;
+    background-color: white;
+    color: red;
+    z-index: 3;
+    padding: 0.7rem 1.5rem;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+@media screen and (max-width:1250px) {
+    /* .g-body {
+        grid-template-columns: repeat(2, 1fr);
+    } */
+    .g-card {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    /* .g-body {
+        grid-template-columns: repeat(2, 1fr);
+    } */
+    .g-card {
+        width: 120px;
+    }
+    .g-super {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .g-body {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .g-heading {
+        font-size: 2rem;
+    }
+    .g-card {
+        width: 150px;
+    }
+}

@@ -1,6 +1,13 @@
+import AmentiesHero from "../Components/AmentiesHero"
+import AllAmenities from "../Components/AllAmenities"
+import Footer from '../Components/Footer.jsx'
 export default function Avlisting()
 {
-    return<>
-    <h1>Available Listing</h1>
-    </>
+    return(
+        <>
+        <AmentiesHero/>
+        <AllAmenities/>
+        <Footer/>
+        </>
+    )
 }

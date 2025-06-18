@@ -1,8 +1,13 @@
+import GalleryHero from "../Components/GalleryHero"
+import GalleryPics from "../Components/GalleryPics"
+import Footer from '../Components/Footer'
 export default function Gallery()
 {
     return(
         <>
-        <h1>Gallery</h1>
+        <GalleryHero/>
+        <GalleryPics/>
+        <Footer/>
         </>
     )
 }
