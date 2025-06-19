@@ -11,7 +11,7 @@ import Gallery from './Pages/Gallery.jsx'
 import Testimonals from './Pages/Testimonials.jsx'
 import ContactUs from './Pages/ContactUs.jsx'
 import Toolbar from '@mui/material/Toolbar'
-
+import WhatsaapIcon from './Components/WhatsaapIcon'
 
 
 // All Pages
@@ -32,7 +32,8 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/testimonials" element={<Testimonals />} />
           <Route path="/contact" element={<ContactUs />} />
-        </Routes>
+      </Routes>
+      <WhatsaapIcon/>
     </div>
   )
 }
