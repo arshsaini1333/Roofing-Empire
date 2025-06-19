@@ -21,21 +21,21 @@ export default function AllProjects()
     const op1 = {
         "image" : Iop1,
         "name":"Price Starts From 50 Lacs/-",
-        "sub":"Green View Project Gaushala Road 2BHK",
+        "sub":"Roofing Empire Project Gaushala Road 2BHK",
         "adj" : advantages,
         "amnt": [2, 2, 803]
     }
     const op2 = {
         "image" : Iop2,
         "name":"Price Starts From 90 Lacs/-",
-        "sub":"Green View Project Gaushala Road 3BHK",
+        "sub":"Roofing Empire Project Gaushala Road 3BHK",
         "adj" : advantages,
         "amnt": [3, 3, 1337]
     }
     const op3 = {
         "image" : Iop3,
         "name":"Price Starts From Rs 1.30 Cr/-",
-        "sub":"Green View Project Gaushala Road 4BHK",
+        "sub":"Roofing Empire Project Gaushala Road 4BHK",
         "adj" : advantages,
         "amnt": [4, 4, 1783]
     }
@@ -44,21 +44,21 @@ export default function AllProjects()
 const up1 = {
     "image" : Iup1,
     "name":"Price Starts From 45 Lacs/-",
-    "sub":"Green View Project 2.0 Gaushala Road 2BHK",
+    "sub":"Roofing Empire Project 2.0 Gaushala Road 2BHK",
     "adj" : advantages,
     "amnt": [2, 2, 803]
 }
 const up2 = {
     "image" : Iup2,
     "name":"Price Starts From Rs 1 Cr/-",
-    "sub":"Green View Project 2.0 Gaushala Road 3BHK",
+    "sub":"Roofing Empire Project 2.0 Gaushala Road 3BHK",
     "adj" : advantages,
     "amnt": [3, 3, 1337]
 }
 const up3 = {
     "image" : Iup3,
     "name":"Price Starts From Rs 1.45 Cr/-",
-    "sub":"Green View Project 2.0 Gaushala Road 4BHK",
+    "sub":"Roofing Empire Project 2.0 Gaushala Road 4BHK",
     "adj" : advantages,
     "amnt": [4, 4, 1783]
 }
@@ -68,21 +68,21 @@ const up3 = {
 const cp1 = {
     "image" : Icp1,
     "name":"Price Starts From 45 Lacs/-",
-    "sub":"Green View Project 2.0 Gaushala Road 2BHK",
+    "sub":"Roofing Empire Project 2.0 Gaushala Road 2BHK",
     "adj" : advantages,
     "amnt": [2, 2, 803]
 }
 const cp2 = {
     "image" : Icp2,
     "name":"Price Starts From Rs 1 Cr/-",
-    "sub":"Green View Project 2.0 Gaushala Road 3BHK",
+    "sub":"Roofing Empire Project 2.0 Gaushala Road 3BHK",
     "adj" :advantages,
     "amnt": [3, 3, 1337]
 }
 const cp3 = {
     "image" : Icp3,
     "name":"Price Starts From Rs 1.45 Cr/-",
-    "sub":"Green View Project 2.0 Gaushala Road 4BHK",
+    "sub":"Roofing Empire Project 2.0 Gaushala Road 4BHK",
     "adj" : advantages,
     "amnt": [4, 4, 1783]
 }
@@ -114,7 +114,7 @@ const cp3 = {
             <div className="completed all-project">
                 <div className="project-heading">
                 <div className="ap-sub">Completed Project</div>
-                    <div className="ap-super">Your Future Home Awaits, Stay Tuned!</div>
+                    <div className="ap-super">Delivered & Ready to Move In!</div>
                 </div>
                 <div className="projects">
                 <ProjectCard card={cp1}/>

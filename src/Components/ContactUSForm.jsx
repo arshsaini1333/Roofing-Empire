@@ -9,6 +9,14 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 export default function ContactUSForm()
 {
+
+  const phoneNumber = '919999200048'; // replace with your number
+  const message = encodeURIComponent('Hi, I would like to know more!');
+  const whatsappLink = `https://wa.me/${phoneNumber}`;
+
+  const handleClick = () => {
+    window.open(whatsappLink, '_blank');
+  };
     return(
         <div className="ContactUS">
             <img src={bg} alt="" className='cu-bg'/>
@@ -33,11 +41,11 @@ export default function ContactUSForm()
         <span>DLF Farms, Chhattarpur, South Delhi</span>
       </div>
       <div className="cui-btns">
-      <button className="cu-whatsapp-btn">
+      <button className="cu-whatsapp-btn" onClick={handleClick}>
       <WhatsAppIcon className="cu-whatsapp-icon" />
       <span>Let's Chat</span>
     </button>
-    <button className='cui-bt'>Book Free Site Visit</button>
+    <button className='cui-bt' >Book Free Site Visit</button>
       </div>
     </div>
         </div>
