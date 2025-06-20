@@ -89,7 +89,7 @@ const HomeTestimonials = () => {
       </div>
  <p><FormatQuoteIcon className='fq-start fq'/>Our clients’ success stories reflect our commitment to excellence. See how we’ve helped them find their dream homes, sustainable investments, and perfect getaways.<FormatQuoteIcon className='fq'/></p>
       <div className="ht-cta">
-        <button><span>Enquire Now</span> <CallIcon className='callIcon' sx={{ fontSize: 25 }}/></button>
+        <button><CallIcon className='callIcon' sx={{ fontSize: 25 }}/> <span>Enquire Now</span></button>
       </div>
       
   

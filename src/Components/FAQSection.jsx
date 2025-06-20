@@ -7,10 +7,6 @@ const faqs = [
     answer: "We offer low-rise flats (2BHK to 4BHK) and freehold plots (100–1000 sq yds) in areas like DLF Farms and Chhattarpur."
   },
   {
-    question: "Are your projects RERA certified?",
-    answer: "Yes, all our projects are RERA registered, ensuring transparency and legal compliance."
-  },
-  {
     question: "How do I schedule a site visit?",
     answer: "Fill out the “Book Free Site Visit” form or use our WhatsApp chat button to connect instantly with our team."
   },
@@ -25,10 +21,6 @@ const faqs = [
   {
     question: "What amenities are included in your properties?",
     answer: "Homes include modular kitchens, branded fittings, gated societies, dual security, and metro/school proximity."
-  },
-  {
-    question: "Who is Naheem Ahmed and what is his experience?",
-    answer: "Naheem Ahmed is our founder with 5+ years of experience in delivering premium, on-time housing projects in South Delhi."
   }
 ];
 
