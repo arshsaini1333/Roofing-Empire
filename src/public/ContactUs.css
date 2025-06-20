@@ -202,7 +202,7 @@
     /* border-radius: 1rem; */
     border: none;
     box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.091);
-    height: 500px;
+    height: 530px;
     width: 100%;
 }
 
@@ -221,7 +221,8 @@
 }
 
 .cuh-sub {
-    font-size: 1.1rem;
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
     /* color: #a27e27; */
     color: #a27e27;
     text-transform: uppercase;
@@ -229,7 +230,7 @@
 }
 
 .cuh-super {
-    font-size: 2.2rem;
+    font-size: 1rem;
     font-weight: bold;
     color: #333;
     margin-bottom: 1rem;
@@ -266,15 +267,21 @@
     background-color: #a27d27de;
     border: none;
     color: white;
-    padding: 1rem 1.5rem;
-    width: 35%;
+    padding: 1rem 2rem;
     font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     font-weight: bold;
     cursor: pointer;
+    transition: all 0.5s ease-in;
 }
 
 .sub-btn:hover {
     background-color: #a27e27;
+    .callIcon {
+        transform: rotate(30deg);
+    }
 }
 
 @media screen and (max-width:1025px) {

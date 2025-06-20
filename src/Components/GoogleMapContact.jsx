@@ -1,5 +1,6 @@
 import '../public/ContactUs.css'
 
+import CallIcon from '@mui/icons-material/Call';
 
 export default function GoogleMapContact()
 {
@@ -19,7 +20,7 @@ export default function GoogleMapContact()
     <div className="cu-form-container" id="cu-form-container">
         <div className="cu-heading">
            <div className="cuh-sub">Leave Your Message</div>
-           <div className="cuh-super">We love to hear from you</div>
+           <div className="cuh-super">Book Your Site Visit Today! Let’s Help You Find Your Dream Home</div>
         </div>
         <form className="cu-form" id="cu-form">
         <label htmlFor="cu-name">
@@ -64,7 +65,7 @@ export default function GoogleMapContact()
         ></textarea>
 
         <div className="cuh-btn">
-        <button type='submit' className='sub-btn'>Submit</button>
+        <button type='submit' className='sub-btn'><CallIcon className='callIcon' sx={{ fontSize: 25 }}/> <span>Enquire Now</span></button>
         </div>
       </form>
     </div>

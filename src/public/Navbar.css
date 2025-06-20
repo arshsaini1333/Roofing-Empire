@@ -5,8 +5,8 @@
     justify-content: space-between;
     justify-content: space-around;
     align-items: center;
-    background: #1c1c1c;
-    /* background-color: white; */
+    /* background: #1c1c1c; */
+    background-color: white;
     /* color: #1c1c1c !important; */
     /* background-color: transparent; */
     padding: 1rem 2rem;
@@ -15,10 +15,12 @@
     left: 0;
     width: 100%;
     z-index: 1001;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.146);
 }
 
 .navbar a {
-    color: white;
+    /* color: white; */
+    color: #1c1c1c;
     text-decoration: none;
     /* margin: 0 1rem; */
     position: relative;
@@ -60,7 +62,8 @@
     /* adjust underline distance */
     width: 0%;
     height: 2px;
-    background: white;
+    /* background: white; */
+    background-color: #1c1c1c;
     transition: width 0.3s ease;
 }
 
@@ -91,7 +94,8 @@
     /* Hidden by default */
     height: 100%;
     width: 300px;
-    background: #1c1c1c;
+    /* background: #1c1c1c; */
+    background-color: white;
     padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
@@ -132,7 +136,8 @@
 .drawer-links a {
     margin: 1rem 0;
     text-decoration: none;
-    color: white;
+    /* color: white; */
+    color: #1c1c1c;
     width: fit-content !important;
     position: relative;
     padding: 0.3rem;
@@ -146,7 +151,7 @@
     /* adjust underline distance */
     width: 0%;
     height: 2px;
-    background: white;
+    background: #1c1c1c;
     transition: width 0.3s ease;
 }
 
