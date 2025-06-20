@@ -120,9 +120,9 @@ const cp3 = {
                 </div>
                 <div className="projects">
                     <ProjectCard card={op1}/>
+                    <ProjectCard card={op4}/>
                     <ProjectCard card={op2}/>
                     <ProjectCard card={op3}/>
-                    <ProjectCard card={op4}/>
                 </div>
             </div>
             <div className="upcoming all-project">
