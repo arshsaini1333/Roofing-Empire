@@ -83,6 +83,7 @@
 
 .projects {
     display: flex;
+    flex-wrap: wrap;
     gap: 3rem;
     width: 100%;
     justify-content: center;

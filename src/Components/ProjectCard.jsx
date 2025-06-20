@@ -18,8 +18,8 @@ export default function ProjectCard({card})
           ))}
         </ul>
         <div className="project-amnt">
-          <span>{amnt[0]} BHK</span> | 
-          <span> {amnt[2]} sq ft</span>
+          <span>{amnt[0]}</span> | 
+          <span> {amnt[1]}</span>
         </div>
       </div>
     </div>
