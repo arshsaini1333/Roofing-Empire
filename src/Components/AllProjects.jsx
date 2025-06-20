@@ -45,7 +45,7 @@ export default function AllProjects()
     const op4 = {
         "image" : Iop4,
         "name":"Price Starts From ₹50 Lacs/-",
-        "sub":"Roofing Empire Project – 100ft Road 2BHK | 75 Sq. Yards",
+        "sub":"Roofing Empire Project – 100ft Road 2BHK, 75 Sq. Yards",
         "adj" : ["🍽️ Modular Kitchen & Stylish Wardrobes", "🛗 Branded Lift", "🛀🏻 Cera Bath Fittings & Ceramic Tiles", "🚗 Stilt Car Parking + Gated Compound", "👮🏻‍♂️ Dual Security System", "📍 Prime Location on 100ft Road"], 
         "amnt": ["Prime Location", "Chhattarpur"]
     }
@@ -75,7 +75,7 @@ const up3 = {
 const up4 = {
     "image" : Iup4,
     "name":"Price Starts From Rs 1.45 Cr/-",
-    "sub":"Independent Kothi | 150 Sq. Yards",
+    "sub":"Independent Kothi, 150 Sq. Yards",
     "adj" : ["🍽 Modular Kitchen & Premium Interiors",
         "🛗 Branded Lift (6-Person Capacity)",
         "🚿 Cera Bath Fittings & Ceramic Tiles",
