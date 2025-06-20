@@ -1,5 +1,6 @@
 import '../public/ContactUs.css'
-import bg from '../assets/ccbg.avif'
+// import bg from '../assets/ccbg.avif'
+import bg from '../assets/contactbg1.jpg'
 
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";

@@ -21,10 +21,10 @@ export default function Navbar() {
 
         <div className="navbar-links desktop-only">
           <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
+          <Link to="/about">About Us</Link>
           <Link to="/project">Projects</Link>
-          <Link to="/listing">Amenities</Link>
-          <Link to="/gallery">Gallery</Link>
+          {/* <Link to="/listing">Amenities</Link> */}
+          {/* <Link to="/gallery">Gallery</Link> */}
           <Link to="/contact">Contact Us</Link>
         </div>
 
@@ -43,10 +43,10 @@ export default function Navbar() {
         </div>
         <div className="drawer-links">
           <Link to="/" onClick={closeDrawer}>Home</Link>
-          <Link to="/about" onClick={closeDrawer}>About</Link>
+          <Link to="/about" onClick={closeDrawer}>About Us</Link>
           <Link to="/project" onClick={closeDrawer}>Projects</Link>
-          <Link to="/listing" onClick={closeDrawer}>Amenities</Link>
-          <Link to="/gallery" onClick={closeDrawer}>Gallery</Link>
+          {/* <Link to="/listing" onClick={closeDrawer}>Amenities</Link> */}
+          {/* <Link to="/gallery" onClick={closeDrawer}>Gallery</Link> */}
           <Link to="/contact" onClick={closeDrawer}>Contact Us</Link>
         </div>
       </div>

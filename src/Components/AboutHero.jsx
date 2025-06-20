@@ -1,4 +1,6 @@
-import bg from '../assets/ph1.jpg'
+// import bg from '../assets/ph1.jpg'
+import bg from '../assets/aboutBG1.jpg'
+
 import '../public/About.css'
 export default function AboutHero()
 {
@@ -6,7 +8,7 @@ export default function AboutHero()
         <div className="AboutHero">
             <img src={bg} alt="" className='about-bg'/>
             <div className="about-head">
-                    <p>We Build Your Dream House</p>
+                    <p>Your Vision, Our Expertise – Crafting Dream Homes with Trust & Precision</p>
             </div>
         </div>
     )
