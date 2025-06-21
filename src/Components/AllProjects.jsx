@@ -45,7 +45,7 @@ export default function AllProjects()
     const op4 = {
         "image" : Iop4,
         "name":"Price Starts From ₹50 Lacs/-",
-        "sub":"Roofing Empire Project – 100ft Road 2BHK, 75 Sq. Yards",
+        "sub":"Roofing Empire Project – 100ft Road 2BHK",
         "adj" : ["🍽️ Modular Kitchen & Stylish Wardrobes", "🛗 Branded Lift", "🛀🏻 Cera Bath Fittings & Ceramic Tiles", "🚗 Stilt Car Parking + Gated Compound", "👮🏻‍♂️ Dual Security System", "📍 Prime Location on 100ft Road"], 
         "amnt": ["Prime Location", "Chhattarpur"]
     }
@@ -114,7 +114,7 @@ const cp3 = {
     return(
         <div className="AllProjects">
             <div className="on-going all-project">
-                <div className="project-heading">
+                <div className="project-heading" data-aos="fade-up">
                     <div className="ap-sub">Ongoing Project</div>
                     <div className="ap-super">Homes in Progress, Reserve Yours Now!</div>
                 </div>
@@ -126,7 +126,7 @@ const cp3 = {
                 </div>
             </div>
             <div className="upcoming all-project">
-                <div className="project-heading">
+                <div className="project-heading" data-aos="fade-up">
                 <div className="ap-sub">Upcoming Project</div>
                     <div className="ap-super">Your Future Home Awaits, Stay Tuned!</div>
                 </div>
@@ -138,7 +138,7 @@ const cp3 = {
                 </div>
             </div>
             <div className="completed all-project">
-                <div className="project-heading">
+                <div className="project-heading" data-aos="fade-up">
                 <div className="ap-sub">Completed Project</div>
                     <div className="ap-super">Delivered & Ready to Move In!</div>
                 </div>

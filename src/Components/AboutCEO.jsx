@@ -3,7 +3,7 @@ import ceo from '../assets/ceo.jpg'
 export default function AboutCEO()
 {
      return(
-        <div className="AboutCEO">
+        <div className="AboutCEO" data-aos="fade-up">
             <div className="ceo-img">
                 <img src={ceo} alt="" />
             </div>

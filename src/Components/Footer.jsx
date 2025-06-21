@@ -1,23 +1,39 @@
 import React from 'react';
 import '../public/Footer.css';
-
+import logo from '../assets/logo1.png'
+import { Link, useLocation, useNavigate } from "react-router-dom";
 const Footer = () => {
+  const location = useLocation();
+
+  const handleClick = (to) => (e) => {
+    
+      window.scrollTo({ top: 0, behavior: "smooth" });
+   
+  };
+
+  const navigate = useNavigate();
+
+  const clickBrand = () => {
+    navigate("/"); 
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <footer className="footer">
       <div className="footer-top">
         <div className="footer-brand">
-          <h2>Roofing Empire</h2>
+          <div className='brands' onClick={clickBrand} > <img src={logo} alt="" /> <span>Roofing Empire</span></div>
           <p>Your Trusted Real Estate Partner in South Delhi</p>
         </div>
 
         <div className="footer-links">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+        <li><Link to="/" onClick={handleClick("/")}>Overview</Link></li>
+        <li><Link to="/about" onClick={handleClick("/about")}>About Us</Link></li>
+        <li><Link to="/project" onClick={handleClick("/project")}>Projects</Link></li>
+        <li><Link to="/contact" onClick={handleClick("/contact")}>Contact</Link></li>
+      </ul>
         </div>
 
         <div className="footer-contact">

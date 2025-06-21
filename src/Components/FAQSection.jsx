@@ -32,7 +32,7 @@ const FAQSection = () => {
   };
 
   return (
-    <div className="faq-container">
+    <div className="faq-container" data-aos="fade-up">
       <div className="faq-headings">
         <div className="faq-sub">Frequently Asked Questions</div>
         <div className="faq-super">Everything You Need to Know

@@ -5,7 +5,7 @@ export default function ProjectCard({card})
    const { image, name, sub, adj, amnt } = card;
 
   return (
-    <div className="project-card">
+    <div className="project-card" data-aos="fade-up">
       <div className="project-card-image">
         <img src={image} alt={sub} />
       </div>

@@ -6,7 +6,7 @@ export default function ProjectHighlight()
     const navigate = useNavigate();
     return(
        
-        <div className="ProjectHighLight">
+        <div className="ProjectHighLight" data-aos="fade-up">
             <div className="ph-heading">
                 <div className="ph-left">
                     {/* <div className="ph-sub">Signature Highlights</div> */}

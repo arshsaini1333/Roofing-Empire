@@ -77,7 +77,7 @@ const HomeTestimonials = () => {
   const columns = splitColumns(testimonials, 3);
 
   return (
-    <div className="testimonial-wrapper">
+    <div className="testimonial-wrapper" data-aos="fade-up">
       <div className="text-block">
         <div className='ht-sub'>What Our Clients Say</div>
         <div className='ht-super'>Trusted By Many, Loved By All</div>

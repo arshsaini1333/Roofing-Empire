@@ -3,7 +3,7 @@ import img from '../assets/homecc.png'
 export default function HomeContact()
 {
     return(
-      <div className="HomeContact">
+      <div className="HomeContact" data-aos="fade-up">
       <div className="subContainer">
       <div className="image-container">
         <img src={img} alt="" />
