@@ -1,20 +1,20 @@
 /* General Navbar styling */
 
 .navbar {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
     /* background: #1c1c1cb3; */
     /* background-color: white; */
     background-color: transparent;
     /* color: white !important; */
     /* background-color: transparent; */
-    padding: 1rem 2rem;
+    padding: 1rem 0rem;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
     z-index: 1001;
     /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.146); */
     transition: background-color 0.4s ease, backdrop-filter 0.4s ease;
@@ -46,13 +46,16 @@
 
 .hamburger {
     cursor: pointer;
+    padding-left: 3rem;
 }
 
 .navbar-brand {
-    /* border: 2px solid red; */
+    width: 50%;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    justify-content: flex-start;
     align-items: center;
+    padding-left: 3rem;
 }
 
 .logo {
@@ -60,6 +63,7 @@
 }
 
 .navbar-links {
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
