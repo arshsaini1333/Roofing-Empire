@@ -271,6 +271,7 @@
     font-size: 1.2rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
     font-weight: bold;
     cursor: pointer;
@@ -302,7 +303,9 @@
         font-size: 1.6rem;
     }
     .sub-btn {
-        width: 70%;
+        width: 100%;
+        font-size: 1rem;
+        padding: 1rem 0.5rem;
     }
 }
 

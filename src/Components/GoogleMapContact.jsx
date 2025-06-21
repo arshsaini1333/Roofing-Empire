@@ -65,7 +65,7 @@ export default function GoogleMapContact()
         ></textarea>
 
         <div className="cuh-btn">
-        <button type='submit' className='sub-btn'><CallIcon className='callIcon' sx={{ fontSize: 25 }}/> <span>Enquire Now</span></button>
+        <button type='submit' className='sub-btn'><CallIcon className='callIcon' sx={{ fontSize: 25 }}/> <span>Request a Call Back</span></button>
         </div>
       </form>
     </div>
