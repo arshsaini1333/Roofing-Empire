@@ -1,16 +1,16 @@
-import Iop1 from '../assets/op1.jpg'
-import Iop2 from '../assets/a1.jpeg'
-import Iop3 from '../assets/a6.jpg'
-import Iop4 from '../assets/a7.jpeg'
+import Iop1 from '../assets/projectImages/img1.jpg'
+import Iop2 from '../assets/projectImages/img2.jpg'
+import Iop3 from '../assets/projectImages/img4.jpg'
+import Iop4 from '../assets/projectImages/img5.jpg'
 
-import Iup1 from '../assets/g3.webp'
-import Iup2 from '../assets/g4.webp'
-import Iup3 from '../assets/g5.webp'
-import Iup4 from '../assets/g6.webp'
+import Iup1 from '../assets/projectImages/img7.jpg'
+import Iup2 from '../assets/projectImages/img10.jpg'
+import Iup3 from '../assets/projectImages/img11.jpg'
+import Iup4 from '../assets/projectImages/img3.jpg'
 
-import Icp1 from '../assets/ambg1.jpg'
-import Icp2 from '../assets/ambg2.jpg'
-import Icp3 from '../assets/ambg4.jpg'
+import Icp1 from '../assets/projectImages/img6.jpg'
+import Icp2 from '../assets/projectImages/img8.jpg'
+import Icp3 from '../assets/projectImages/img9.jpg'
 import ProjectCard from './ProjectCard'
 
 import '../public/Project.css'
@@ -75,7 +75,7 @@ const up3 = {
 const up4 = {
     "image" : Iup4,
     "name":"Price Starts From Rs 1.45 Cr/-",
-    "sub":"Independent Kothi, 150 Sq. Yards",
+    "sub":"Independent Kothi",
     "adj" : ["🍽 Modular Kitchen & Premium Interiors",
         "🛗 Branded Lift (6-Person Capacity)",
         "🚿 Cera Bath Fittings & Ceramic Tiles",
@@ -84,7 +84,7 @@ const up4 = {
         "✍ Custom-Built Options Available",
         "📍 Prime Location in DLF Farms, Chhattarpur"
     ],
-    "amnt": ["30 Ft Front", "Independent Plot"]
+    "amnt": ["30 Ft Front", "150 Sq. Yards"]
 }
 
 
@@ -114,7 +114,7 @@ const cp3 = {
     return(
         <div className="AllProjects">
             <div className="on-going all-project">
-                <div className="project-heading" data-aos="fade-up">
+                <div className="project-heading" data-aos="fade-up" >
                     <div className="ap-sub">Ongoing Project</div>
                     <div className="ap-super">Homes in Progress, Reserve Yours Now!</div>
                 </div>

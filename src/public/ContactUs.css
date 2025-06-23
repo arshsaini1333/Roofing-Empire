@@ -95,7 +95,10 @@
     align-items: center;
     gap: 8px;
     cursor: pointer;
+    text-align: center !important;
     transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
 }
 
 .cui-bt:hover {
@@ -132,7 +135,7 @@
         height: auto;
         /* padding-bottom: 5rem; */
         flex-direction: column;
-        margin-top: 10rem;
+        margin-top: 6rem;
     }
     .contact-information {
         width: 70%;
@@ -146,7 +149,7 @@
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
     .contact-information {
         width: 90%;
         padding: 0;
@@ -165,14 +168,14 @@
         align-items: flex-start;
     }
     .cu-whatsapp-btn {
-        width: 70%;
+        width: 90%;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 0.5rem;
     }
     .cui-bt {
-        width: 70%;
+        width: 90%;
         text-align: center !important;
     }
     .cuh-super {
