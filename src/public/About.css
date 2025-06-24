@@ -45,19 +45,31 @@
 
 @media screen and (max-width:990px) {
     .about-head {
-        width: 70%;
-        padding: 2rem 1rem;
-        font-size: 4rem;
-    }
-}
-
-@media screen and (max-width:560px) {
-    .about-head {
-        width: 50%;
+        width: 100%;
         padding: 2rem 0;
         /* padding-left: 1rem; */
         font-size: 2rem;
         font-weight: bold;
+        font-size: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-head p {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .about-head {
+        width: 100%;
+        padding: 2rem 0;
+        /* padding-left: 1rem; */
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .about-head p {
+        width: 90%;
     }
 }
 
