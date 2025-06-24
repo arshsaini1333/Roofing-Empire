@@ -1,11 +1,11 @@
 import '../public/ContactUs.css'
 // import bg from '../assets/ccbg.avif'
 import bg from '../assets/contactbg1.jpg'
-
+import { useState } from 'react';
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-
+import EnquiryPopup from './EnquiryPopup';
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 export default function ContactUSForm()
@@ -18,7 +18,10 @@ export default function ContactUSForm()
   const handleClick = () => {
     window.open(whatsappLink, '_blank');
   };
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
     return(
+      <>
         <div className="ContactUS">
             <img src={bg} alt="" className='cu-bg'/>
             <div className="cu-contetn">
@@ -46,10 +49,17 @@ export default function ContactUSForm()
       <WhatsAppIcon className="cu-whatsapp-icon" />
       <span>Let's Chat</span>
     </button>
-    <button className='cui-bt' ><span>Book Your Free Site Visit</span></button>
+    <button className='cui-bt'  onClick={() => setIsPopupOpen(true)}><span>Book Your Free Site Visit</span></button>
       </div>
     </div>
         </div>
         </div>
+
+
+<EnquiryPopup
+        isOpen={isPopupOpen}
+        onClose={() => setIsPopupOpen(false)}
+      />
+      </>
     )
 }

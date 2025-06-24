@@ -1,5 +1,8 @@
 import React from 'react';
 import '../public/HomeTestimonials.css';
+import { useState } from 'react';
+
+import EnquiryPopup from './EnquiryPopup';
 import CounterCircle from './CounterCircle';
 import CallIcon from '@mui/icons-material/Call';
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
@@ -75,8 +78,10 @@ const TestimonialCard = ({ name, location, msg }) => (
 
 const HomeTestimonials = () => {
   const columns = splitColumns(testimonials, 3);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   return (
+    <>
     <div className="testimonial-wrapper" data-aos="fade-up">
       <div className="text-block">
         <div className='ht-sub'>What Our Clients Say</div>
@@ -89,7 +94,7 @@ const HomeTestimonials = () => {
       </div>
  <p><FormatQuoteIcon className='fq-start fq'/>Our clients’ success stories reflect our commitment to excellence. See how we’ve helped them find their dream homes, sustainable investments, and perfect getaways.<FormatQuoteIcon className='fq'/></p>
       <div className="ht-cta">
-        <button><CallIcon className='callIcon' sx={{ fontSize: 25 }}/> <span>Enquire Now</span></button>
+        <button  onClick={() => setIsPopupOpen(true)}><CallIcon className='callIcon' sx={{ fontSize: 25 }}/> <span>Enquire Now</span></button>
       </div>
       
   
@@ -111,7 +116,15 @@ const HomeTestimonials = () => {
           </div>
         ))}
       </div>
+
+      
     </div>
+   
+    <EnquiryPopup
+        isOpen={isPopupOpen}
+        onClose={() => setIsPopupOpen(false)}
+      />
+    </>
   );
 };
 
