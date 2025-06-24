@@ -76,6 +76,7 @@
 @media screen and (max-width:1025px) {
     .home-content {
         width: 95%;
+        margin: 1rem auto;
     }
     .home-content h1 {
         font-size: 1.8rem;
