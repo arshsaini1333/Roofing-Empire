@@ -477,7 +477,7 @@ textarea::placeholder {
     .image-container {
         width: 100%;
         padding: 0 1rem;
-        background: url('../assets/homecc.png');
+        background: url('../assets/contactForm.jpeg');
         height: 30rem;
         background-repeat: no-repeat;
         background-size: cover;
