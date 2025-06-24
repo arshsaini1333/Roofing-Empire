@@ -20,7 +20,7 @@
     display: flex;
     background: #fff;
     width: 90%;
-    max-width: 800px;
+    max-width: 900px;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
@@ -47,6 +47,8 @@
     margin-bottom: 20px;
     font-size: 26px;
     color: #333;
+    /* color: #a27e27; */
+    font-weight: bolder;
 }
 
 .popup-right form {
