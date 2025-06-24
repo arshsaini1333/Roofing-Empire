@@ -111,4 +111,8 @@
     .popup-right {
         padding: 20px;
     }
+    .close-btn {
+        top: 0;
+        right: 0;
+    }
 }
