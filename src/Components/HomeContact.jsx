@@ -1,5 +1,5 @@
 import '../public/Home.css'
-import img from '../assets/homecc.png'
+import img from '../assets/contactForm.jpeg'
 export default function HomeContact()
 {
     return(
