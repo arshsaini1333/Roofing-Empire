@@ -77,18 +77,29 @@
 
 .close-btn {
     position: absolute;
-    top: 15px;
-    right: 20px;
+    top: 8px;
+    right: 15px;
     background: transparent;
     font-size: 24px;
     border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
     cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+
+.close-btn:hover {
+    background-color: rgba(0, 0, 0, 0.087);
 }
 
 
 /* Responsive */
 
 @media (max-width: 768px) {
+    .popup-right h2 {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+    }
     .popup-content {
         flex-direction: column;
         margin-top: 2rem;
