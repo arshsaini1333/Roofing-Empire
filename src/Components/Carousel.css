@@ -1,0 +1,57 @@
+.carousel-wrapper {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-window {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.carousel-card {
+    display: flex;
+    flex: 0 0 calc(100% / 3);
+    align-items: center;
+    justify-content: center;
+    /* Show 3 cards */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 28px;
+    padding: 8px 14px;
+    cursor: pointer;
+    border: none;
+    z-index: 10;
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}
+
+@media screen and (max-width:768px) {
+    .arrow.left {
+        left: -10px;
+    }
+    .arrow.right {
+        right: -10px;
+    }
+}

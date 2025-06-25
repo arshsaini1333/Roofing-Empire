@@ -1,4 +1,4 @@
-import bg from '../assets/ambg7.jpg'
+import bg from '../assets/amenbg.jpg'
 import '../public/Amenties.css'
 
 export default function AmentiesHero()

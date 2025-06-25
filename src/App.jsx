@@ -7,7 +7,6 @@ import About from './Pages/About.jsx'
 import Project from './Pages/Project.jsx'
 import Avlisting from './Pages/Avlisting.jsx'
 import Whyus from './Pages/Whyus.jsx'
-import Gallery from './Pages/Gallery.jsx'
 import Testimonals from './Pages/Testimonials.jsx'
 import ContactUs from './Pages/ContactUs.jsx'
 import Toolbar from '@mui/material/Toolbar'
@@ -40,7 +39,6 @@ function App() {
 
           <Route path="/whyus" element={<Whyus />} />
           <Route path="/home" element={<Home />} />
-          {/* <Route path="/gallery" element={<Gallery />} /> */}
           <Route path="/testimonials" element={<Testimonals />} />
           <Route path="/contact" element={<ContactUs />} />
       </Routes>

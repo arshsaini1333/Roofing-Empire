@@ -1,6 +1,6 @@
 // AmenitiesCardView.jsx
 import React from 'react';
-import './AmenC.css';
+import '../public/AmenC.css';
 
 import parkingImg from '../assets/icons/parking.jpg';
 import waterImg from '../assets/icons/water.jpg';
@@ -30,7 +30,7 @@ const amenitiesData = [
   { icon: tilesImg, title: 'Italian/Bottichino Tiles', description: 'Designer tiles for flooring (64*32 ft size).' },
   { icon: graniteImg, title: 'Granite Stone', description: 'Granite stone for parking, lobby & staircase.' },
   { icon: gateImg, title: 'Gated Society', description: 'Secure gated community for residents.' },
-  { icon: internetImg, title: 'Complete Internet Connectivity', description: 'High-speed internet access in all flats.' },
+  // { icon: internetImg, title: 'Complete Internet Connectivity', description: 'High-speed internet access in all flats.' },
   { icon: gasImg, title: 'IGL Gas', description: 'Piped gas supply for convenience and safety.' },
   { icon: wardrobeImg, title: 'Wardrobe', description: 'Modular wardrobes in all bedrooms.' },
   { icon: kitchenImg, title: 'Modular Kitchens', description: 'Stylish modular kitchens with modern fittings.' },

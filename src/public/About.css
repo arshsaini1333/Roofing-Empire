@@ -25,51 +25,42 @@
     position: relative;
     display: flex;
     align-items: center;
-    width: 60%;
+    width: 100%;
     height: 100%;
     z-index: 5;
-    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.ah-super {
     font-size: 5rem;
-    /* border: 2px solid red; */
-    /* line-height: 7rem; */
-    opacity: 1;
-    padding: 2rem 7rem;
+    color: white;
     font-weight: bolder;
 }
 
-@media screen and (max-width:1100px) {
-    .about-head {
-        width: 70%;
-    }
+.ah-sub {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
 }
 
 @media screen and (max-width:990px) {
     .about-head {
         width: 100%;
-        padding: 2rem 0;
-        /* padding-left: 1rem; */
-        font-size: 2rem;
-        font-weight: bold;
-        font-size: 4rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        font-size: 3.5rem;
     }
-    .about-head p {
-        width: 90%;
+    .ah-super {
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 0 0.5rem;
     }
-}
-
-@media screen and (max-width:750px) {
-    .about-head {
-        width: 100%;
-        padding: 2rem 0;
-        /* padding-left: 1rem; */
-        font-size: 2rem;
-        font-weight: bold;
-    }
-    .about-head p {
-        width: 90%;
+    .ah-sub {
+        font-size: 1.1rem;
+        text-align: center;
+        padding: 0 1rem;
     }
 }
 

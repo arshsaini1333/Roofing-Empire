@@ -1,5 +1,5 @@
 import React from "react";
-import "./EnquiryPopup.css";
+import "../public/EnquiryPopup.css";
 import img from '../assets/cp1.png'
 const EnquiryPopup = ({ isOpen, onClose }) => {
   if (!isOpen) return null;

@@ -121,7 +121,7 @@
 /* Card Designing */
 
 .project-card {
-    width: 29%;
+    width: 100%;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -200,14 +200,11 @@
     .project-heading {
         text-align: center;
     }
-    .project-card {
-        width: 60%;
-    }
 }
 
 @media screen and (max-width: 600px) {
     .project-card {
-        width: 85%;
+        width: 95%;
     }
     .ap-super {
         font-size: 1.3rem;

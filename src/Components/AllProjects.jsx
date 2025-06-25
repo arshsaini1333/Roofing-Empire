@@ -13,13 +13,15 @@ import Icp2 from '../assets/projectImages/img8.jpg'
 import Icp3 from '../assets/projectImages/img9.jpg'
 import ProjectCard from './ProjectCard'
 
+import Carousel from './Carousel'
+
 import '../public/Project.css'
 export default function AllProjects()
 {
     //  Projects Data
 
     // Ongoing
-    const advantages = ["🍽️ Modular Kitchen & Stylish Wardrobes", "🛗 Branded Lift", "🛀🏻 Cera Bath Fittings & Ceramic Tiles", "🚗 Stilt Car Parking + Gated Compound", "👮🏻‍♂️ Dual Security System"];
+    const advantages =["🍽️ Modular Kitchen & Stylish Wardrobes", "🛗 Branded Lift", "🛀🏻 Cera Bath Fittings & Ceramic Tiles", "🚗 Stilt Car Parking + Gated Compound", "👮🏻‍♂️ Dual Security System", "📍 Prime Location on 100ft Road"];
     const op1 = {
         "image" : Iop1,
         "name":"Price Starts From 50 Lacs/-",
@@ -45,9 +47,9 @@ export default function AllProjects()
     const op4 = {
         "image" : Iop4,
         "name":"Price Starts From ₹50 Lacs/-",
-        "sub":"Roofing Empire Project – 100ft Road 2BHK",
-        "adj" : ["🍽️ Modular Kitchen & Stylish Wardrobes", "🛗 Branded Lift", "🛀🏻 Cera Bath Fittings & Ceramic Tiles", "🚗 Stilt Car Parking + Gated Compound", "👮🏻‍♂️ Dual Security System", "📍 Prime Location on 100ft Road"], 
-        "amnt": ["Prime Location", "Chhattarpur"]
+        "sub":"Roofing Empire Project – 100ft Road",
+        "adj" : advantages, 
+        "amnt": ["2 BHK", "803 sq ft"]
     }
 
 // UpComing
@@ -76,15 +78,8 @@ const up4 = {
     "image" : Iup4,
     "name":"Price Starts From Rs 1.45 Cr/-",
     "sub":"Independent Kothi",
-    "adj" : ["🍽 Modular Kitchen & Premium Interiors",
-        "🛗 Branded Lift (6-Person Capacity)",
-        "🚿 Cera Bath Fittings & Ceramic Tiles",
-        "🚗 Stilt Car Parking + Gated Compound",
-        "🛡 Dual Security with CCTV Surveillance",
-        "✍ Custom-Built Options Available",
-        "📍 Prime Location in DLF Farms, Chhattarpur"
-    ],
-    "amnt": ["30 Ft Front", "150 Sq. Yards"]
+    "adj" : ["🍽️ Modular Kitchen & Stylish Wardrobes", "🛗 Branded Lift", "🛀🏻 Cera Bath Fittings & Ceramic Tiles", "🚗 Stilt Car Parking + Gated Compound", "👮🏻‍♂️ Dual Security System", "📍 Prime Location on 100ft Road", "🧱 30 Ft Front | Independent Plot"],
+    "amnt": ["30 Ft Front", "1350 sq ft"]
 }
 
 
@@ -111,6 +106,26 @@ const cp3 = {
     "amnt": ["4 BHK",  "1783 sq ft"]
 }
 
+
+
+const card1 = [
+    <ProjectCard card={op1} />,
+    <ProjectCard card={op2} />,
+    <ProjectCard card={op3} />,
+    <ProjectCard card={op4} />,
+  ];
+
+const card2 = [
+<ProjectCard card={up1}/>,
+<ProjectCard card={up2}/>,
+<ProjectCard card={up3}/>,
+<ProjectCard card={up4}/>,
+]
+const card3 = [
+    <ProjectCard card={cp1}/>,
+                <ProjectCard card={cp2}/>,
+               <ProjectCard card={cp3}/>
+]
     return(
         <div className="AllProjects">
             <div className="on-going all-project">
@@ -118,35 +133,22 @@ const cp3 = {
                     <div className="ap-sub">Ongoing Project</div>
                     <div className="ap-super">Homes in Progress, Reserve Yours Now!</div>
                 </div>
-                <div className="projects">
-                    <ProjectCard card={op1}/>
-                    <ProjectCard card={op4}/>
-                    <ProjectCard card={op2}/>
-                    <ProjectCard card={op3}/>
-                </div>
+                <Carousel cards={card1} />
             </div>
             <div className="upcoming all-project">
                 <div className="project-heading" data-aos="fade-up">
                 <div className="ap-sub">Upcoming Project</div>
                     <div className="ap-super">Your Future Home Awaits, Stay Tuned!</div>
                 </div>
-                <div className="projects">
-                <ProjectCard card={up1}/>
-                <ProjectCard card={up2}/>
-                <ProjectCard card={up3}/>
-                <ProjectCard card={up4}/>
-                </div>
+                <Carousel cards={card2} />
+                
             </div>
             <div className="completed all-project">
                 <div className="project-heading" data-aos="fade-up">
                 <div className="ap-sub">Completed Project</div>
                     <div className="ap-super">Delivered & Ready to Move In!</div>
                 </div>
-                <div className="projects">
-                <ProjectCard card={cp1}/>
-                <ProjectCard card={cp2}/>
-               <ProjectCard card={cp3}/>
-               </div>
+                <Carousel cards={card3} />
             </div>
         </div>
     )

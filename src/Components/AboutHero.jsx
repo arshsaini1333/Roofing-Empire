@@ -8,7 +8,8 @@ export default function AboutHero()
         <div className="AboutHero">
             <img src={bg} alt="" className='about-bg'/>
             <div className="about-head">
-                    <p>Your Vision, Our Expertise – Crafting Dream Homes with Trust & Precision</p>
+                    <div className='ah-super'>Your Vision, Our Expertise</div>
+                    <div className='ah-sub'> Crafting Dream Homes with Trust & Precision</div>
             </div>
         </div>
     )
