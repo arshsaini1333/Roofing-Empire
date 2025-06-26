@@ -1,5 +1,5 @@
 import '../public/Thankyou.css'
-import img from '../assets/cp2.jpg'
+import img from '../assets/thank.jpg'
 import { useNavigate } from 'react-router'
 export default function ThankyouCompo(){
     const navigate = useNavigate();
