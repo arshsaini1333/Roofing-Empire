@@ -1,7 +1,7 @@
 import '../public/ContactUs.css';
 import CallIcon from '@mui/icons-material/Call';
 import { useState } from 'react';
-
+import { useNavigate } from 'react-router';
 export default function GoogleMapContact() {
   const scriptURL =
     'https://script.google.com/macros/s/AKfycbzt9UpvROsjUYlILwpWgzGdW-lQJl9kxxMoinVgj9DTgVLLPyVn2A_icK8AaYNGW_ka/exec';
@@ -15,7 +15,7 @@ export default function GoogleMapContact() {
 
   const [message, setMessage] = useState('');
   const [submitting, setSubmitting] = useState(false);
-
+  const navigate = useNavigate()
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
@@ -40,6 +40,7 @@ export default function GoogleMapContact() {
         setMessage("Form submitted successfully!");
         setSubmitting(false);
         setFormData({ name: '', email: '', phone: '', message: '' });
+        navigate('/thankyou')
       })
       .catch(() => {
         setMessage("Error submitting the form. Try again.");
@@ -114,7 +115,7 @@ export default function GoogleMapContact() {
           <div className="cuh-btn">
           <button type="submit" id="contactSubmit" className={`sub-btn ${submitting ? 'blur-bt' : ''}`}>
           <CallIcon className="callIcon" sx={{ fontSize: 25 }} />{' '}
-              <span>{submitting ? "Requesting..." : "Request a Call Back"}</span>
+              <span>Request a Call Back</span>
             </button>
           </div>
           

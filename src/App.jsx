@@ -12,6 +12,7 @@ import ContactUs from './Pages/ContactUs.jsx'
 import Toolbar from '@mui/material/Toolbar'
 import WhatsaapIcon from './Components/WhatsaapIcon'
 
+import Thankyou from './Pages/Thankyou.jsx'
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 import { useEffect } from 'react'
@@ -41,6 +42,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/testimonials" element={<Testimonals />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/thankyou" element={<Thankyou />} />
       </Routes>
       <WhatsaapIcon/>
     </div>

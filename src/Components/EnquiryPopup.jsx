@@ -1,4 +1,5 @@
-import React, { useRef, useState } from "react";
+import React, { use, useRef, useState } from "react";
+import { useNavigate } from "react-router";
 import "../public/EnquiryPopup.css";
 import img from "../assets/cp1.png";
 
@@ -15,7 +16,7 @@ const EnquiryPopup = ({ isOpen, onClose }) => {
   const [message, setMessage] = useState('');
   const [submitting, setSubmitting] = useState(false);
   const formRef = useRef(null);
-
+ const navigate = useNavigate()
   if (!isOpen) return null;
 
   const handleChange = (e) => {
@@ -42,8 +43,7 @@ const EnquiryPopup = ({ isOpen, onClose }) => {
         setMessage("Form submitted successfully!");
         setSubmitting(false);
         setFormData({ name: '', email: '', phone: '', message: '' });
-        // Optional redirect
-        // window.location.href = 'Thankyou.html';
+        navigate('/thankyou')
       })
       .catch(() => {
         setMessage("Error submitting the form. Try again.");
@@ -95,7 +95,7 @@ const EnquiryPopup = ({ isOpen, onClose }) => {
             <button type="submit" id="contactSubmit" className={submitting ? 'blur-bt' : ''}>
               {submitting ? "Submitting..." : "Submit Enquiry"}
             </button>
-            <p id="msgpop" style={{ color: message.includes('Error') ? 'red' : 'green', marginTop: "10px" }}>{message}</p>
+            
           </form>
           <button className="close-btn" onClick={onClose}>×</button>
         </div>

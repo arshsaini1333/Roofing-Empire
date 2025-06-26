@@ -1,7 +1,7 @@
 import '../public/Home.css';
 import img from '../assets/contactForm.jpeg';
 import { useState } from 'react';
-
+import { useNavigate } from 'react-router';
 export default function HomeContact() {
   const scriptURL =
     'https://script.google.com/macros/s/AKfycbzt9UpvROsjUYlILwpWgzGdW-lQJl9kxxMoinVgj9DTgVLLPyVn2A_icK8AaYNGW_ka/exec';
@@ -13,7 +13,7 @@ export default function HomeContact() {
     phone: '',
     message: ''
   });
-
+  const navigate = useNavigate()
   const [message, setMessage] = useState('');
   const [submitting, setSubmitting] = useState(false);
 
@@ -42,6 +42,8 @@ export default function HomeContact() {
         setMessage('Form submitted successfully!');
         setSubmitting(false);
         setFormData({ fName: '', lName: '', email: '', phone: '', message: '' });
+
+        navigate('/thankyou')
       })
       .catch(() => {
         setMessage('Error submitting the form. Try again.');

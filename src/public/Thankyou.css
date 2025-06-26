@@ -1,0 +1,81 @@
+.ThankyouHero {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.thankyou-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    object-fit: cover;
+    opacity: 0.2;
+}
+
+.thankyou-head {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.thankyou-head button {
+    padding: 1rem 2rem;
+    background-color: #a27e27;
+    color: white;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.thankyou-head button:hover {
+    opacity: 1;
+}
+
+.th-super {
+    font-size: 5rem;
+    color: white;
+    font-weight: bolder;
+}
+
+.th-sub {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+
+@media screen and (max-width:990px) {
+    .thankyou-head {
+        width: 100%;
+        font-size: 3.5rem;
+    }
+    .th-super {
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 0 0.5rem;
+    }
+    .th-sub {
+        font-size: 1.1rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+}
