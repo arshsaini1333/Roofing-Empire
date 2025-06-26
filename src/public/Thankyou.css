@@ -55,12 +55,14 @@
     font-size: 5rem;
     color: white;
     font-weight: bolder;
+    text-align: center;
 }
 
 .th-sub {
     font-size: 2rem;
     font-weight: 700;
     color: white;
+    text-align: center;
 }
 
 @media screen and (max-width:990px) {
@@ -78,4 +80,8 @@
         text-align: center;
         padding: 0 1rem;
     }
+}
+
+.thanks {
+    margin-top: 88vh;
 }
