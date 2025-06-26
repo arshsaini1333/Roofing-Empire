@@ -65,6 +65,10 @@
     text-align: center;
 }
 
+.thanks {
+    margin-top: 88vh;
+}
+
 @media screen and (max-width:990px) {
     .thankyou-head {
         width: 100%;
@@ -80,8 +84,7 @@
         text-align: center;
         padding: 0 1rem;
     }
-}
-
-.thanks {
-    margin-top: 88vh;
+    .thanks {
+        margin-top: 91vh;
+    }
 }
