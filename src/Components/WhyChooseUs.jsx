@@ -51,7 +51,7 @@ const features = [
 export default function WhyChooseUs(){
   return (
     <div className="why-choose-us" >
-      <h2 data-aos="fade-up">Why Choose Roofing Empire?</h2>
+      <h2 data-aos="fade-up">Why Choose Roofing Empires?</h2>
       
       <div className="features-grid">
         {features.map((feature, index) => (

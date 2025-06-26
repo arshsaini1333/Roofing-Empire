@@ -37,7 +37,7 @@ export default function Navbar() {
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="navbar-brand desktop-only">
           <img src={logo} alt="" className='logo'/>
-          <Link to="/" className='brand-name'>Roofing Empire</Link>
+          <Link to="/" className='brand-name'>Roofing Empires</Link>
         </div>
 
         <div className="navbar-links desktop-only">
@@ -59,7 +59,7 @@ export default function Navbar() {
         <div className="drawer-header">
          
           <img src={logo} alt="" className='logo' onClick={closeDrawer}/>
-          <Link to="/" className='dh-brand-name' onClick={closeDrawer}>Roofing Empire</Link>
+          <Link to="/" className='dh-brand-name' onClick={closeDrawer}>Roofing Empires</Link>
          
         </div>
         <div className="drawer-links">

@@ -25,21 +25,21 @@ export default function AllProjects()
     const op1 = {
         "image" : Iop1,
         "name":"Price Starts From 50 Lacs/-",
-        "sub":"Roofing Empire Project Gaushala Road 2BHK",
+        "sub":"Roofing Empires Project Gaushala Road 2BHK",
         "adj" : advantages,
         "amnt": ["2 BHK",  "803 sq ft"]
     }
     const op2 = {
         "image" : Iop2,
         "name":"Price Starts From 90 Lacs/-",
-        "sub":"Roofing Empire Project Gaushala Road 3BHK",
+        "sub":"Roofing Empires Project Gaushala Road 3BHK",
         "adj" : advantages,
         "amnt": ["3 BHK", "1337 sq ft"]
     }
     const op3 = {
         "image" : Iop3,
         "name":"Price Starts From Rs 1.30 Cr/-",
-        "sub":"Roofing Empire Project Gaushala Road 4BHK",
+        "sub":"Roofing Empires Project Gaushala Road 4BHK",
         "adj" : advantages,
         "amnt": ["4 BHK",  "1783 sq ft"]
     }
@@ -47,7 +47,7 @@ export default function AllProjects()
     const op4 = {
         "image" : Iop4,
         "name":"Price Starts From ₹50 Lacs/-",
-        "sub":"Roofing Empire Project – 100ft Road",
+        "sub":"Roofing Empires Project – 100ft Road",
         "adj" : advantages, 
         "amnt": ["2 BHK", "803 sq ft"]
     }
@@ -56,21 +56,21 @@ export default function AllProjects()
 const up1 = {
     "image" : Iup1,
     "name":"Price Starts From 45 Lacs/-",
-    "sub":"Roofing Empire Project 2.0 Gaushala Road 2BHK",
+    "sub":"Roofing Empires Project 2.0 Gaushala Road 2BHK",
     "adj" : advantages,
     "amnt": ["2 BHK",  "803 sq ft"]
 }
 const up2 = {
     "image" : Iup2,
     "name":"Price Starts From Rs 1 Cr/-",
-    "sub":"Roofing Empire Project 2.0 Gaushala Road 3BHK",
+    "sub":"Roofing Empires Project 2.0 Gaushala Road 3BHK",
     "adj" : advantages,
     "amnt": ["3 BHK", "1337 sq ft"]
 }
 const up3 = {
     "image" : Iup3,
     "name":"Price Starts From Rs 1.45 Cr/-",
-    "sub":"Roofing Empire Project 2.0 Gaushala Road 4BHK",
+    "sub":"Roofing Empires Project 2.0 Gaushala Road 4BHK",
     "adj" : advantages,
     "amnt": ["4 BHK",  "1783 sq ft"]
 }
@@ -87,21 +87,21 @@ const up4 = {
 const cp1 = {
     "image" : Icp1,
     "name":"Price Starts From 45 Lacs/-",
-    "sub":"Roofing Empire Project 2.0 Gaushala Road 2BHK",
+    "sub":"Roofing Empires Project 2.0 Gaushala Road 2BHK",
     "adj" : advantages,
     "amnt": ["2 BHK",  "803 sq ft"]
 }
 const cp2 = {
     "image" : Icp2,
     "name":"Price Starts From Rs 1 Cr/-",
-    "sub":"Roofing Empire Project 2.0 Gaushala Road 3BHK",
+    "sub":"Roofing Empires Project 2.0 Gaushala Road 3BHK",
     "adj" :advantages,
     "amnt": ["3 BHK", "1337 sq ft"]
 }
 const cp3 = {
     "image" : Icp3,
     "name":"Price Starts From Rs 1.45 Cr/-",
-    "sub":"Roofing Empire Project 2.0 Gaushala Road 4BHK",
+    "sub":"Roofing Empires Project 2.0 Gaushala Road 4BHK",
     "adj" : advantages,
     "amnt": ["4 BHK",  "1783 sq ft"]
 }

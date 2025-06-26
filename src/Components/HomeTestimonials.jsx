@@ -10,12 +10,12 @@ const testimonials = [
   {
     name: "Rajat Arora",
     location: "New Delhi",
-    msg: "Buying a villa through Roofing Empire was the best decision we made. The location in Chhattarpur is peaceful, and the quality is top-notch. Their team is extremely professional and transparent!"
+    msg: "Buying a villa through Roofing Empires was the best decision we made. The location in Chhattarpur is peaceful, and the quality is top-notch. Their team is extremely professional and transparent!"
   },
   {
     name: "Ankita Mehra",
     location: "Saket",
-    msg: "We were looking for a reliable developer in South Delhi and Roofing Empire exceeded all expectations. From site visits to paperwork – smooth and stress-free!"
+    msg: "We were looking for a reliable developer in South Delhi and Roofing Empires exceeded all expectations. From site visits to paperwork – smooth and stress-free!"
   },
   {
     name: "Prateek Bansal",
@@ -25,12 +25,12 @@ const testimonials = [
   {
     name: "Kunal Sharma",
     location: "Vasant Kunj",
-    msg: "I invested in a plot with Roofing Empire last year and have already seen great appreciation. Their team’s market knowledge is excellent."
+    msg: "I invested in a plot with Roofing Empires last year and have already seen great appreciation. Their team’s market knowledge is excellent."
   },
   {
     name: "Divya Kapoor",
     location: "Chhattarpur",
-    msg: "As a first-time homebuyer, I had many doubts. But Roofing Empire guided me through every step with patience and clarity. Truly trustworthy people."
+    msg: "As a first-time homebuyer, I had many doubts. But Roofing Empires guided me through every step with patience and clarity. Truly trustworthy people."
   },
   {
     name: "Anil & Seema Grover",
@@ -40,12 +40,12 @@ const testimonials = [
   {
     name: "Simran Chadha",
     location: "Panchsheel Park",
-    msg: "What I loved most was their honesty – no hidden charges, no delays, and regular updates. Roofing Empire delivers what they promise."
+    msg: "What I loved most was their honesty – no hidden charges, no delays, and regular updates. Roofing Empires delivers what they promise."
   },
   {
     name: "Siddharth Taneja",
     location: "Hauz Khas",
-    msg: "I’ve worked with many developers, but Roofing Empire stands out for their ethics, clear titles, and premium construction quality."
+    msg: "I’ve worked with many developers, but Roofing Empires stands out for their ethics, clear titles, and premium construction quality."
   },
   {
     name: "Megha Suri",
@@ -55,7 +55,7 @@ const testimonials = [
   {
     name: "Rohit Malhotra",
     location: "Punjabi Bagh",
-    msg: "We wanted a farmhouse near Delhi and Roofing Empire helped us find the perfect one in DLF Farms. Great value and no compromise on quality!"
+    msg: "We wanted a farmhouse near Delhi and Roofing Empires helped us find the perfect one in DLF Farms. Great value and no compromise on quality!"
   }
 ];
 

@@ -37,7 +37,7 @@ export default function ContactUSForm()
 
       <div className="cu-contact-item">
         <EmailIcon className="cu-contact-icon" />
-        <span>hello@roofingempire.com</span>
+        <span>roofingempiresllp@gmail.com</span>
       </div>
 
       <div className="cu-contact-item">

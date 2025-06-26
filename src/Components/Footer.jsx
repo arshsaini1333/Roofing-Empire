@@ -22,7 +22,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-top">
         <div className="footer-brand">
-          <div className='brands' onClick={clickBrand} > <img src={logo} alt="" /> <span>Roofing Empire</span></div>
+          <div className='brands' onClick={clickBrand} > <img src={logo} alt="" /> <span>Roofing Empires</span></div>
           <p>Your Trusted Real Estate Partner in South Delhi</p>
         </div>
 
@@ -40,12 +40,12 @@ const Footer = () => {
           <h4>Contact</h4>
           <p>📍 Chhattarpur & DLF Farms, South Delhi</p>
           <p>📞 +91 9999200048</p>
-          <p>✉️ roofingempire@gmail.com</p>
+          <p>✉️ roofingempiresllp@gmail.com</p>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} Roofing Empire. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Roofing Empires. All rights reserved.</p>
       </div>
     </footer>
   );
